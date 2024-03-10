@@ -8,7 +8,7 @@ function Logo() {
             <span className='h-full'>
                 <HomeTwoTone className='p-0 text-3xl' twoToneColor={"#4bc1a7"} />
             </span>
-            <p className='hidden md:block font-semibold text-xl text-primary'>Faraway</p>
+            <p className='hidden lg:block font-semibold text-xl text-primary'>Faraway</p>
         </div>
     )
 }
