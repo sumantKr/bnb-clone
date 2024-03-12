@@ -6,10 +6,10 @@ export const antdTheme :ThemeConfig = {
             itemSelectedColor:"#4bc1a7",
         },
         Button:{
-            colorBgBase:"#4bc1a7",
-            colorBgTextHover:"#4bc1a7",
-            colorBorder:"#4bc1a7",
-            defaultActiveBg:"#4bc1a7"
+            // colorBgBase:"#4bc1a7",
+            // colorBgTextHover:"#4bc1a7",
+            // colorBorder:"#4bc1a7",
+            // defaultActiveBg:"#4bc1a7"
         }
     },
     token:{
