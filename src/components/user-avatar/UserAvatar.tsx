@@ -9,7 +9,7 @@ import { CustomCard } from '..'
 
 function UserAvatar() {
 
-  const { toggleValue: collapsed, toggle:toggleMenu } = useToggle()
+  const [collapsed, toggleMenu] = useToggle(false)
 
   return (
     <div className='relative rounded-xl py-1 px-2  border-[1px] cursor-pointer hover:bg-teal-50 transition-colors duration-100 border-teal-100 flex items-center justify-between w-[5rem]'>

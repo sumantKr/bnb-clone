@@ -1,23 +1,13 @@
-import { useState } from "react";
-import { create } from "zustand";
+"use client"
+import { Dispatch, SetStateAction, useState } from "react"
 
-interface IToggle {
-    toggleValue: boolean,
-    toggle: () => void
+export function useToggle(initValue: boolean = false) {
+
+    const [toggleValue, setToggle] = useState<boolean>(initValue)
+
+    function toggle() {
+        setToggle(!toggleValue)
+    }
+
+    return [toggleValue, toggle as any] 
 }
-
-export const useToggle = create<IToggle>((set) => ({
-    toggleValue: false,
-    toggle: () => set(((state) => ({ toggleValue: !state.toggleValue })))
-}))
-
-interface IModalProps {
-    isOpen: boolean,
-    close: () => void,
-    open: () => void,
-}
-export const useModal = create<IModalProps>((set) => ({
-    isOpen: false,
-    close: () => set({ isOpen: false }),
-    open: () => set({ isOpen: true }),
-})) 
