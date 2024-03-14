@@ -1,4 +1,4 @@
-import { ConfigProviderProps, ThemeConfig } from "antd";
+import { ThemeConfig } from "antd";
 
 export const antdTheme :ThemeConfig = {
     components:{
