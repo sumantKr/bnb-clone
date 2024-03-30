@@ -1,7 +1,6 @@
 import React from 'react'
-import CustomModal from '../CustomModal'
 import { ModalProps } from 'antd'
-import CustomButton from '@/components/custom-button/CustomButton'
+import { CustomButton, CustomModal } from '@/components'
 
 function RegisterModal(registerModalProps: ModalProps) {
 

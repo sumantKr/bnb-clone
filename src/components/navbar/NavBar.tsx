@@ -1,4 +1,4 @@
-import { BookingFilter, Logo, UserAvatar, UserMenu } from '..'
+import {  Logo, UserAvatar, UserMenu, BookingFilter } from '..'
 
 function NavBar() {
     return (
